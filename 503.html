@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>503</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-cover bg-center bg-gradient-to-br from-blue-500 to-purple-500 flex justify-center items-center h-screen"
+  >
+    <div class="text-center">
+      <h1 class="text-6xl font-bold mb-4">Coming Soon</h1>
+      <h2 class="text-lg text-gray-600 mb-8">
+        We're working hard to improve our website and we'll ready to launch
+        after
+      </h2>
+      <div class="countdown flex justify-center">
+        <div class="text-center mr-8">
+          <div class="card bg-white shadow-lg rounded-lg p-4">
+            <h3 id="days" class="text-4xl font-bold">00</h3>
+            <h4 class="text-gray-600">Days</h4>
+          </div>
+        </div>
+        <div class="text-center mr-8">
+          <div class="card bg-white shadow-lg rounded-lg p-4">
+            <h3 id="hours" class="text-4xl font-bold">00</h3>
+            <h4 class="text-gray-600">Hours</h4>
+          </div>
+        </div>
+        <div class="text-center mr-8">
+          <div class="card bg-white shadow-lg rounded-lg p-4">
+            <h3 id="minutes" class="text-4xl font-bold">00</h3>
+            <h4 class="text-gray-600">Minutes</h4>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="card bg-white shadow-lg rounded-lg p-4">
+            <h3 id="seconds" class="text-4xl font-bold">00</h3>
+            <h4 class="text-gray-600">Seconds</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Set the date for the countdown
+      const countdownDate = new Date("2024-12-31 00:00:00").getTime();
+
+      // Update the countdown every second
+      const countdown = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        // Calculate days, hours, minutes, and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the countdown
+        document.getElementById("days").innerText = formatTime(days);
+        document.getElementById("hours").innerText = formatTime(hours);
+        document.getElementById("minutes").innerText = formatTime(minutes);
+        document.getElementById("seconds").innerText = formatTime(seconds);
+
+        // If the countdown is over, display a message
+        if (distance < 0) {
+          clearInterval(countdown);
+          document.getElementById("countdown").innerHTML =
+            "Maintenance is over!";
+        }
+      }, 1000);
+
+      // Function to format time (add leading zero if less than 10)
+      function formatTime(time) {
+        return time < 10 ? "0" + time : time;
+      }
+    </script>
+  </body>
+</html>
