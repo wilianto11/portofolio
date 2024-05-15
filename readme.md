@@ -46,7 +46,7 @@ Anda ingin berkontribusi pada pengembangan portofolio ini? Sangat kami hargai!
 
 ## Lisensi:
 
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
+Proyek ini dilisensikan di bawah [MIT License](license).
 
 ---
 
