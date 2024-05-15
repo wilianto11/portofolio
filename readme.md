@@ -19,7 +19,7 @@ Ini adalah portofolio digital saya, mencerminkan karya-karya terbaru dan kemampu
   <img src="https://github.com/github/explore/raw/main/topics/sass/sass.png" alt="SCSS" width="20" height="20"/>
 
 - **Three.js**: Library JavaScript 3D yang memungkinkan pembuatan grafik 3D interaktif di browser.  
-  <img src="https://github.com/github/explore/raw/main/topics/threejs/threejs.png" alt="Three.js" width="20" height="20"/>
+  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js" width="90" height="20"/>
 
 ## Fitur Utama:
 
