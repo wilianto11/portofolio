@@ -6,8 +6,6 @@ Ini adalah portofolio digital saya, mencerminkan karya-karya terbaru dan kemampu
 
 ## Teknologi yang Digunakan:
 
-## Teknologi yang Digunakan:
-
 - **HTML, CSS, JavaScript**: Dasar dalam pengembangan web untuk membuat struktur, tata letak, dan interaksi antarmuka pengguna.  
   <img src="https://github.com/github/explore/raw/main/topics/html/html.png" alt="HTML" width="20" height="20"/> <img src="https://github.com/github/explore/raw/main/topics/css/css.png" alt="CSS" width="20" height="20"/> <img src="https://github.com/github/explore/raw/main/topics/javascript/javascript.png" alt="JavaScript" width="20" height="20"/>
 
